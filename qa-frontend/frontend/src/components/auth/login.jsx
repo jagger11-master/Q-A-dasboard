@@ -20,7 +20,7 @@ const Login = () => {
       const result = await login(email, password)
       
       if (result.success) {
-        navigate(result.user.role === 'interviewer' ? '/interviewer' : '/interviewee')
+        navigate(result.user.role.toLowerCase() === 'interviewer' ? '/interviewer' : '/interviewee')
       } else {
         setError(result.error)
       }
