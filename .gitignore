@@ -1,0 +1,43 @@
+# =========================
+# FRONTEND (React / Vite)
+# =========================
+qa-frontend/frontend/node_modules/
+qa-frontend/frontend/dist/
+qa-frontend/frontend/build/
+
+# =========================
+# BACKEND (Node.js / Express)
+# =========================
+qa-backend/node_modules/
+*.log
+.env
+.env.*
+
+# =========================
+# BACKEND (Python / Flask)
+# =========================
+qa-backend/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# =========================
+# DATABASES
+# =========================
+*.db
+*.sqlite3
+
+# =========================
+# LOGS & MISC
+# =========================
+logs/
+*.log
+.DS_Store
+Thumbs.db
+
+# =========================
+# EDITOR SETTINGS
+# =========================
+.vscode/
+.idea/
+

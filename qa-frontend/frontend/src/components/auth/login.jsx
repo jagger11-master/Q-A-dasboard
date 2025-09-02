@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../../contexts/AuthContext'
 
@@ -18,6 +18,8 @@ const Login = () => {
       setError('')
       setLoading(true)
       const result = await login(email, password)
+
+      console.log(JSON.stringify(result))
       
       if (result.success) {
         navigate(result.user.role.toLowerCase() === 'interviewer' ? '/interviewer' : '/interviewee')
